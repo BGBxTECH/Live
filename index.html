@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CIGNAL TV</title>
+    <link rel="icon" type="image/svg+xml" href="https://cignalplay.com/assets/images/logo/cignalplay-logo.svg" />
+    <link rel="stylesheet" href="display.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        #developer-info {
+            font-family: 'Arial', sans-serif;
+            font-style: italic;
+            font-size: 14px;
+            color: rgb(52, 192, 33);
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid rgb(52, 192, 33);
+            background-color: #000000;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        #sidebar {
+            background-color: #222;
+            color: rgb(52, 192, 33);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #search-bar {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(221, 221, 221);
+            color: #333;
+        }
+
+        .channel-sbr {
+            margin-top: 10px;
+        }
+
+        .open-btn {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .open-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div id="container-ott">
+        <div class="container">
+            <div class="ott-container" id="video-ott">
+                <video id="drm-player" class="ott-player" controls autoplay></video>
+            </div>
+        </div>
+        <div class="channel-ott closed" id="sidebar">
+            <h2>CIGNAL TV</h2>
+            <input type="text" id="search-bar" placeholder="Search">
+            <div class="channel-sbr">
+                <ul id="channels"></ul>
+            </div>
+            <p id="developer-info">Developer by <strong>BGBxTECH</strong></p>
+        </div>
+        <button id="open-button" class="open-btn"><i class="fa fa-television"></i></button>
+    </div>
+    <script src="browser.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
