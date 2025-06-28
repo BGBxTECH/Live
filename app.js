@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const widthThreshold = window.outerWidth - window.innerWidth > threshold;
         const heightThreshold = window.outerHeight - window.innerHeight > threshold;
         if (widthThreshold || heightThreshold) {
-            window.location.href = 'https://bgbxtech.github.io/Live';
+            window.location.href = 'https://cignal-tv.netlify.app';
         }
     };
     devtools();
